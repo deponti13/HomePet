@@ -1,0 +1,1120 @@
+/*estilo geral*/
+
+*{
+    margin: 5px;
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+   
+}
+
+/*estilo botao whatsApp*/
+
+.whatsApp-link{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #9BBC08;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    
+}
+
+.fa-whatsapp{
+    margin: 16px;
+}
+
+/*fim botao whatsApp*/
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #DC3C93;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    transition: .2s;
+    color: white;
+
+
+}
+
+
+html body{
+    overflow-x: hidden;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*fim do estilo geral*/
+
+/*cabeçalho*/
+
+header{
+    padding: 40px 4%;
+    background-color: #cfeb54;
+    border-radius: 30px;
+    height: 350px;
+   
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-size: 25px;
+}
+
+header a:hover{
+    color: #9BBC08;
+    transform: scale(1.09);
+}
+
+header nav ul{
+    list-style-type: none;
+    
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    background-color: #DC3C93;
+    border-radius: 100px;
+    justify-content: center;
+}
+
+header nav ul li:hover{
+    height: 35px;
+    box-shadow: 0px 0px 8px #9BBC08 ;
+    transform: scale(1.09);
+}
+
+.btn-contato button:hover{
+    height: 55px;
+    box-shadow: 0px 0px 8px #DC3C93;
+    transform: scale(1.09);
+}
+
+/*fim cabecalho*/
+
+/*estilo topo do site*/
+
+section .topo-do-site{
+    padding: 40px 4%;
+   
+}
+
+section .topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #DC3C93;
+    font-size: 60px;
+    line-height: 40px;
+    margin-top: 50px;
+}
+
+.topo-do-site h1 span{
+    color: #9BBC08;
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+}
+
+.topo-do-site p{
+    color: rgb(96, 96, 96);
+    font-size: 20px;
+    margin: 40px 0;
+    font-family: "Anton", serif;;
+   
+}
+
+.topo-do-site .btn-contato button{
+    color: #fafaf9;
+    margin-bottom: 40px;
+}
+
+.topo-do-site .img-topo-site img{
+    width: 600px;
+    height: 600px;
+    position: absolute; /* Posição absoluta */
+    right: 0;           /* Encosta na borda direita */
+    top: 200px;          /* Ajusta a distância do topo */
+
+}
+
+.txt-topo-site p{
+    color: #3c3c3caa;
+}
+
+/*fim do topo do site*/
+
+
+/*estilo sobre*/
+
+section.sobre {
+    padding: 80px 4%;
+    display: flex; /* Adicionado para garantir que a seção seja flexível */
+    justify-content: center; /* Opcional: Centraliza o conteúdo */
+    align-items: center; /* Opcional: Alinha o conteúdo verticalmente no centro */
+    background-color: #ebfaa7c4;
+    border-radius: 30px;
+    height: 450px;
+    animation: appear 5ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+ 
+    
+}
+
+/* Flexbox para a div que contém a imagem e o texto */
+section.sobre .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Garante que a imagem e o texto fiquem separados */
+    width: 100%; /* Garantir que ocupe toda a largura disponível */
+    max-width: 1200px; /* Opcional: Limita a largura para evitar que o conteúdo fique muito esticado */
+}
+
+/* Imagem à esquerda */
+.img-sobre img {
+    width: 600px; /* Você pode ajustar o tamanho da imagem */
+    height: auto; /* Mantenha a proporção da imagem */
+    margin-right: 50px; /* Diminui a margem à direita */
+}
+
+/* Texto à direita */
+.txt-sobre {
+    color: #000;
+    flex: 1; /* Permite que o texto ocupe o restante do espaço disponível */
+}
+
+.txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 80px;
+    font-family: "Anton", sans-serif;
+    color: #9BBC08;
+    
+    
+}
+
+.txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+    line-height: 0.8; /* Ajuste conforme necessário */
+    margin-top: -30px;
+    line-height: 1.0;
+    color: #555;
+    
+
+}
+
+/* Botões de redes sociais */
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: solid #DC3C93;
+    background-color: #9BBC08;
+    font-size: 40px;
+    color: #fff;
+    margin: 0 10px;
+    margin-top: 50px;
+}
+
+/* Efeito de hover nos botões */
+.sobre .txt-sobre .btn-social button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #ff0deb66;
+}
+
+
+
+/*fim sobre*/
+
+
+/*hambiente*/
+
+/* Geral para a seção */
+section.hambiente {
+    padding: 80px 4%;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.hambiente .titulo {
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: #444;
+}
+
+.hambiente .titulo span {
+    color: #FF0095;
+}
+
+/* Estilização do carrossel  hambiente*/
+
+
+section.hambiente {
+    padding: 50px 4%;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.hambiente .titulo {
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: #444;
+}
+
+.hambiente .titulo span {
+    color: #FF0095;
+}
+
+
+.carousel {
+    position: relative;
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+.txt {
+    max-width: 40%;
+    margin-left: auto; 
+    text-align: left;
+}
+
+.txt h3 {
+    font-size: 36px;
+    color: #9BBC08;
+    margin-top: -500px;
+}
+
+.txt p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .carousel {
+        width: 80%;
+        height: 400px;
+    }
+
+    .carousel-images img {
+        height: 400px;
+    }
+
+    .txt {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+/*final sessao hambiente*/
+
+
+/*sessao servicos*/
+
+section.servicos {
+    padding: 60px 4%;
+    background-color: #f9f9f9;
+    animation: reveal 1ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+}
+
+
+section.servicos .flex {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+    
+}
+
+/* Estilos para cada box de serviço */
+.servicos .servicos-box {
+    color: #222121;
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff; 
+    width: 100%;
+    max-width: 300px; 
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    position: relative;
+    cursor: pointer; 
+}
+
+
+.servicos .servicos-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.servicos .servicos-box h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #DC3C93; 
+}
+
+.servicos .servicos-box p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0; 
+    margin: 0; 
+}
+
+.servicos .servicos-box.active p {
+    max-height: 500px; 
+    padding: 10px 0;
+    margin: 10px 0; 
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    padding: 60px;
+}
+
+h2 span{
+    color: #9BBC08;
+}
+
+.servicos-box p {
+    display: none;
+    margin-top: 15px;
+    line-height: 1.6;
+    color: #444;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+
+.servicos-box.active p {
+    display: block;
+}
+
+
+/*final sessao serviços*/
+
+
+
+/*inicio dropdown*/
+
+.comocomecar h2{
+    text-align: center;
+    margin-top: 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+}
+
+.comocomecar h2 span{
+    color: #9BBC08;
+}
+
+.comocomecar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #ebfaa7c4;
+    
+    
+}
+
+details{
+    text-align: center;
+    background-color: #DC3C93;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background-color 0.3s;
+    width: 60%;
+    max-width: 600px;
+    margin-top: 0;
+    color: #fafaf9;
+    
+}
+
+details:hover {
+    background-color: #9BBC08; 
+}
+
+.comocomecar details summary{
+    padding: 2%;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+details p {
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    background-color: #fafaf9;
+    color: #333;
+    border-radius: 5px;
+}
+
+details img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/*fim dropdown*/
+
+/* comeco footer */
+
+footer .interface{
+    max-width: 1280px;
+    margin: auto;
+}
+
+footer{
+    background-color: #ebfaa7c4;
+    color: #555;
+    padding: 40px 0;
+    
+}
+
+footer .line-footer1{
+    text-align: center;
+    border-bottom: 1px solid #DC3C93;
+    padding-bottom: 40px;
+}
+
+.line-footer1 h2{
+    font-size: 2.5rem;
+    margin-bottom: -60px;
+    font-family: "Poppins", serif;
+}
+
+.line-footer1 h2 span{
+    color: #DC3C93;
+}
+
+.line-footer p{
+    font-size: 1.2rem;
+    margin: 10px 0 20px 0;
+}
+
+ footer .line-footer2{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #DC3C93;
+ }
+
+ footer .line-footer2 .box-line-footer{
+    max-width: calc(100% / 5);
+ }
+
+
+footer .box-line-footer img{
+
+    max-width: 200px;
+    margin-top: -70px;
+
+}
+
+footer .line-footer2 .box-line-footer p{
+
+    margin-top: -60px;
+
+}
+
+footer .line-footer2 .box-line-footer p span{
+    color: #DC3C93;
+}
+
+.line-footer2 .box-line-footer h3{
+    color: #DC3C93;
+    margin-bottom: 20px;
+}
+
+.line-footer2 .box-line-footer a{
+    color: #839e0a;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    
+}
+
+.box-line-footer .btn-redes a{
+    display: inline;
+}
+
+.box-line-footer .btn-redes button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: #839e0a;
+    border: 1px solid #f8f8f8;
+    color: #f8f8f8;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .2s;
+
+}
+
+.box-line-footer .btn-redes button:hover{
+    background-color: #DC3C93;
+    border-color: #DC3C93 ;
+
+}
+
+footer .line-footer3{
+    padding-top: 40px ;
+    text-align: center;
+}
+
+footer .line-footer3 p{
+    color: #000;
+}
+
+
+/*final footer*/
+
+/*comeco google maps*/
+
+.googlemaps{
+    padding: 40px 0;
+}
+
+.map-section h2 span{
+    color: #9BBC08;
+
+}
+
+.map-section h2{
+    color: #000;
+}
+
+
+
+.map-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    
+}
+
+.map-container {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    border: 3px solid #839e0a;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+
+
+/*final google maps*/
+
+/*comeco veterinarias*/
+
+
+.profiles-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f701c6, #f104f1);
+    color: #fff;
+}
+
+.veterinarias h2 span{
+    color: #9BBC08;
+}
+
+
+
+.profiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1 1 45%;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile.reverse {
+    flex-direction: row-reverse;
+}
+
+.profile img {
+    width: 350px;
+    height: 450px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 4px solid #839e0a;
+    animation: reveal 3ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+}
+
+.profile .info {
+    flex: 1;
+}
+
+.profile .info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #DC3C93;
+    margin-left: 10px;
+}
+
+.profile .info p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1020px) {
+    .profiles-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile.reverse {
+        flex-direction: column;
+        
+    }
+
+    .profile img {
+        margin-bottom: 60px;
+    }
+
+    /*classe geral*/
+
+    .flex{
+        flex-direction: column;
+
+    }
+
+    /*fim classe geral*/
+
+
+      
+
+    /*inicio do site*/
+
+    .logo img{
+        width: 500px;
+        height: 500px;
+        text-align: center;
+        margin-top: -90px;
+        margin-left: -50px;
+    }
+
+
+
+    .txt-topo-site h1{
+        font-size: 45px;
+        line-height: 1;
+        
+        
+    }
+
+    .txt-topo-site p{
+        margin-top: -5px;
+    }
+
+
+
+     /*fim do inicio site*/
+
+     /*sobre*/
+
+     .txt-sobre h2 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: -30px;
+        gap: 15px;
+    }
+
+    .txt-sobre p {
+        margin: 10px 5px;
+        line-height: 1.0;
+        margin-top: -60px;
+        height: -200px;
+        font-size: 17px;
+        
+    }
+
+    section.sobre {
+        height: 550px;
+    }
+
+    .btn-social{
+        display: none;
+     }
+
+     .img-sobre{
+        display: none;
+     }
+
+     /*fim sobre*/
+
+
+
+
+    /*cabecalho*/
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .btn-contato{
+        display: none;
+    }
+
+    .img-topo-site{
+        display: none;
+    }
+
+    /*fim cabecalho*/
+
+     /*sessao veterinarias*/
+
+    .veterinarias h2{
+        font-size: 40px;
+        text-align: center;
+        line-height: 45px;
+    }
+
+    .profile .info h3{
+        font-size: 55px;
+        margin-top: -25px;
+    }
+
+    .profile .info p{
+        font-size: 20px;
+    }
+
+    /*fim sessao veterinarias*/
+
+
+     /*sessao hambiente*/
+
+     .hambiente .titulo {
+        font-size: 35px;
+        margin-top: -40px;
+        margin-bottom: 75px;
+    }
+
+    .txt h3 {
+        font-size: 36px;
+        margin-top: 90px;
+    }
+
+    .carousel {
+      margin-top: -55px;
+      justify-content: center;
+      align-items: center;
+      width: 600px;
+      margin-left: -150px;
+    }
+
+    .carousel-images img {
+        width: 100%;
+        height: 400px;
+        
+       
+    }
+        
+/*fim sessao hambiente*/
+
+
+/* sessao serviços*/
+
+h2{
+    
+    margin-top: -50px;
+    font-size: 45px;
+   
+}
+
+.servicos-box{
+    justify-content: center;
+    margin-left: 35px;
+}
+
+
+
+/*fim sessao serviços*/
+
+/* sessao dropdown*/
+
+.comocomecar h2{
+    
+    margin-top: -80px;
+    font-size: 50px;
+    line-height: 45px;
+}
+
+
+/*fim sessao dropdown*/
+
+
+/*sessao footer*/
+
+footer .interface{
+    max-width: 1280px;
+    margin: auto;
+}
+
+footer{
+    background-color: #ebfaa7c4;
+    color: #555;
+    padding: 40px 0;
+    
+}
+
+footer .line-footer1{
+   
+    margin-top: -30px;
+}
+
+footer .line-footer1 p{
+    display: none;
+}
+
+.line-footer1 h2{
+    font-size: 1.5rem;
+    margin-bottom: -90px;
+    font-family: "Poppins", serif;
+}
+
+
+ footer .line-footer2{
+   display: none;
+ }
+
+ footer .line-footer2 .box-line-footer{
+    display: none;
+ }
+
+
+footer .box-line-footer img{
+
+   display: none;
+
+}
+
+footer .line-footer2 .box-line-footer p{
+
+    display: none;
+
+}
+
+
+.line-footer2 .box-line-footer h3{
+   display: none;
+}
+
+.line-footer2 .box-line-footer a{
+display: none;
+}
+
+
+.box-line-footer .btn-redes button:hover{
+  display: none;
+
+}
+
+
+
+
+
+
+/*fim sessao footer*/
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*keyframes*/
+
+
+
+@keyframes appear{
+    from {
+        opacity: 0;
+        translate: -100vw 0;
+
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+
+    }
+}
+
+@keyframes scroll{
+    from{
+        scale: 0 1;
+
+    }
+
+    to{
+        scale: 1 1 ;
+
+    }
+}
+
+
+@keyframes reveal{
+    from{
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+
+    }
+
+    to{
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+
+    }
+}
+
+
+
+/*responsividade*/
+
+
+
+
+/*fim responsividade*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
