@@ -758,7 +758,7 @@ iframe {
     margin-bottom: 0;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 720px) {
     .profiles-container {
         flex-direction: column;
         gap: 30px;
@@ -779,12 +779,20 @@ iframe {
         margin-bottom: 60px;
     }
 
+
+
     /*classe geral*/
+
+    header > .interface{
+        
+       margin-left: 60px;
+    }
 
     .flex{
         flex-direction: column;
 
     }
+
 
     /*fim classe geral*/
 
@@ -796,9 +804,8 @@ iframe {
     .logo img{
         width: 500px;
         height: 500px;
-        text-align: center;
         margin-top: -90px;
-        margin-left: -50px;
+        margin-left: -140px;
     }
 
 
@@ -812,6 +819,7 @@ iframe {
 
     .txt-topo-site p{
         margin-top: -5px;
+        font-size: 17px;
     }
 
 
@@ -872,9 +880,18 @@ iframe {
      /*sessao veterinarias*/
 
     .veterinarias h2{
-        font-size: 40px;
+        font-size: 30px;
+        margin-top: 30px;
         text-align: center;
         line-height: 45px;
+    }
+    .profiles-container{
+        margin-left: -30px;
+    }
+
+    .profile{
+        height: 200px;
+        width: 400px;
     }
 
     .profile .info h3{
@@ -925,13 +942,13 @@ iframe {
 h2{
     
     margin-top: -50px;
-    font-size: 45px;
+    font-size: 35px;
    
 }
 
 .servicos-box{
     justify-content: center;
-    margin-left: 35px;
+    margin-left: 10px;
 }
 
 
