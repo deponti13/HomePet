@@ -521,11 +521,7 @@ details p {
     border-radius: 5px;
 }
 
-details img{
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-}
+
 
 /*fim dropdown*/
 
@@ -923,7 +919,7 @@ iframe {
       margin-top: -55px;
       justify-content: center;
       align-items: center;
-      width: 600px;
+      width: 500px;
       margin-left: -150px;
     }
 
