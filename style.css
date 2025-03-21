@@ -248,6 +248,7 @@ section.sobre .flex {
     color: #fff;
     margin: 0 10px;
     margin-top: 50px;
+    cursor: pointer;
 }
 
 /* Efeito de hover nos botões */
